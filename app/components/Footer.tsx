@@ -1,7 +1,7 @@
 'use client'
 
 import Link from 'next/link'
-import { FaRocket, FaGithub, FaLinkedin, FaTwitter, FaEnvelope, FaPhone, FaMapMarkerAlt, FaCode, FaUsers, FaProjectDiagram, FaGraduationCap, FaWhatsapp } from 'react-icons/fa'
+import { FaRocket, FaGithub, FaLinkedin, FaTwitter, FaEnvelope, FaPhone, FaMapMarkerAlt, FaCode, FaUsers, FaProjectDiagram, FaGraduationCap } from 'react-icons/fa'
 
 const Footer = () => {
   const currentYear = new Date().getFullYear()
@@ -74,7 +74,7 @@ const Footer = () => {
                 <a href="mailto:sriram.polakam@gmail.com" className="hover:text-blue-400 transition-colors duration-300">sriram.polakam@gmail.com</a>
               </div>
               <div className="flex items-center space-x-3 text-gray-400">
-                <FaWhatsapp className="text-green-400" />
+                <span className="text-green-400 text-lg">📱</span>
                 <a href="https://wa.me/9177903061" className="hover:text-green-400 transition-colors duration-300">WhatsApp: +91 91779 03061</a>
               </div>
             </div>
