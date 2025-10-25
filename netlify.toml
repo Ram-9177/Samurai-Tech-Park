@@ -1,0 +1,26 @@
+[build]
+  command = "npm run build"
+  publish = ".next"
+
+[build.environment]
+  NODE_VERSION = "18"
+  NPM_VERSION = "9"
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "DENY"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "origin-when-cross-origin"
+    Permissions-Policy = "camera=(), microphone=(), geolocation=()"
+
+[[redirects]]
+  from = "/home"
+  to = "/"
+  status = 301
+
+[context.production.environment]
+  NEXT_PUBLIC_SITE_URL = "https://samuraitechpark.com"
+  NEXT_PUBLIC_WHATSAPP_NUMBER = "9177903061"
+  NEXT_PUBLIC_CONTACT_EMAIL = "sriram.polakam@gmail.com"
+  NEXT_PUBLIC_CONTACT_PHONE = "+919177903061"

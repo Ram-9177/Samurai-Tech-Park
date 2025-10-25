@@ -1,0 +1,135 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    @apply border-gray-700;
+  }
+  
+  body {
+    @apply bg-dark-bg text-gray-100 font-sans;
+  }
+}
+
+@layer components {
+  /* Dark Theme Background - Matching Reference Image */
+  .bg-dark-bg {
+    background-color: #0A0F1B;
+  }
+  
+  .bg-dark-card {
+    background-color: #1A1F2E;
+  }
+  
+  .bg-dark-section {
+    background-color: #0F1419;
+  }
+
+  /* Clean Effects */
+  .neon-glow {
+    /* No glow effect */
+  }
+  
+  .neon-border {
+    border: 1px solid currentColor;
+  }
+  
+  .glow-text {
+    /* No glow effect */
+  }
+
+  /* Grid Background - Matching Reference Image */
+  .cyber-grid {
+    background-image: 
+      linear-gradient(#2C3E50 1px, transparent 1px),
+      linear-gradient(90deg, #2C3E50 1px, transparent 1px);
+    background-size: 30px 30px;
+  }
+
+  /* Clean Buttons */
+  .btn-neon {
+    @apply relative overflow-hidden bg-transparent border-2 px-6 py-3 rounded-lg font-semibold transition-all duration-300;
+    border-color: #3b82f6;
+    color: #3b82f6;
+  }
+  
+  .btn-neon:hover {
+    background-color: #3b82f6;
+    color: #ffffff;
+  }
+
+  /* Clean Cards */
+  .card-neon {
+    @apply bg-dark-card border border-gray-700 rounded-xl p-6 transition-all duration-300;
+  }
+  
+  .card-neon:hover {
+    border-color: #3b82f6;
+  }
+
+  /* Typography */
+  .text-neon-blue {
+    color: #3b82f6;
+  }
+  
+  .text-neon-green {
+    color: #10b981;
+  }
+  
+  .text-neon-pink {
+    color: #ec4899;
+  }
+
+  /* Animations */
+  .pulse-neon {
+    animation: pulse-clean 2s infinite;
+  }
+  
+  @keyframes pulse-clean {
+    0%, 100% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0.7;
+    }
+  }
+
+  .float {
+    animation: float 6s ease-in-out infinite;
+  }
+  
+  @keyframes float {
+    0%, 100% {
+      transform: translateY(0px);
+    }
+    50% {
+      transform: translateY(-20px);
+    }
+  }
+
+  /* Clean Text */
+  .gradient-text-neon {
+    color: #3b82f6;
+  }
+
+  /* Section Styling */
+  .section-dark {
+    @apply py-24 bg-dark-section;
+  }
+  
+  .container-dark {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+
+  /* Hero Section */
+  .hero-dark {
+    @apply relative overflow-hidden bg-dark-bg;
+  }
+  
+  .hero-dark::before {
+    content: '';
+    @apply absolute inset-0;
+    background: rgba(59, 130, 246, 0.05);
+  }
+}
