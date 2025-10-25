@@ -7,8 +7,9 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "build:prod": "next build && next export",
-    "deploy": "npm run build && npm run start",
+    "build:static": "next build",
+    "export": "next build && next export",
+    "build:netlify": "next build",
     "analyze": "cross-env ANALYZE=true next build",
     "type-check": "tsc --noEmit"
   },
