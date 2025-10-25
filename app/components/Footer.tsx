@@ -29,13 +29,13 @@ const Footer = () => {
 
   const socialLinks = [
     { name: 'GitHub', href: '#', icon: FaGithub, color: 'text-gray-400 hover:text-white' },
-    { name: 'LinkedIn', href: '#', icon: FaLinkedin, color: 'text-gray-400 hover:text-electric-blue' },
-    { name: 'Twitter', href: '#', icon: FaTwitter, color: 'text-gray-400 hover:text-hot-pink' },
+    { name: 'LinkedIn', href: '#', icon: FaLinkedin, color: 'text-gray-400 hover:text-blue-400' },
+    { name: 'Twitter', href: '#', icon: FaTwitter, color: 'text-gray-400 hover:text-pink-400' },
     { name: 'Email', href: 'mailto:sriram.polakam@gmail.com', icon: FaEnvelope, color: 'text-gray-400 hover:text-blue-400' },
   ]
 
   return (
-    <footer className="bg-dark-section border-t border-electric-blue/30 neon-border">
+    <footer className="bg-dark-section border-t border-gray-700">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Company Info */}
@@ -82,15 +82,15 @@ const Footer = () => {
 
           {/* Company Links */}
           <div>
-            <h3 className="text-lg font-semibold text-white mb-6 font-orbitron">
-              <span className="text-electric-blue glow-text">Company</span>
+            <h3 className="text-lg font-semibold text-white mb-6">
+              <span className="text-blue-400">Company</span>
             </h3>
             <ul className="space-y-3">
               {footerLinks.company.map((link) => (
                 <li key={link.name}>
                   <Link 
                     href={link.href}
-                    className="text-gray-400 hover:text-electric-blue transition-colors duration-300 hover:glow-text"
+                    className="text-gray-400 hover:text-blue-400 transition-colors duration-300"
                   >
                     {link.name}
                   </Link>
@@ -101,15 +101,15 @@ const Footer = () => {
 
           {/* Services Links */}
           <div>
-            <h3 className="text-lg font-semibold text-white mb-6 font-orbitron">
-              <span className="text-hot-pink glow-text">Services</span>
+            <h3 className="text-lg font-semibold text-white mb-6">
+              <span className="text-pink-400">Services</span>
             </h3>
             <ul className="space-y-3">
               {footerLinks.services.map((link) => (
                 <li key={link.name}>
                   <Link 
                     href={link.href}
-                    className="text-gray-400 hover:text-hot-pink transition-colors duration-300 hover:glow-text"
+                    className="text-gray-400 hover:text-pink-400 transition-colors duration-300"
                   >
                     {link.name}
                   </Link>
@@ -120,15 +120,15 @@ const Footer = () => {
 
           {/* Resources Links */}
           <div>
-            <h3 className="text-lg font-semibold text-white mb-6 font-orbitron">
-              <span className="text-neon-green glow-text">Resources</span>
+            <h3 className="text-lg font-semibold text-white mb-6">
+              <span className="text-green-400">Resources</span>
             </h3>
             <ul className="space-y-3">
               {footerLinks.resources.map((link) => (
                 <li key={link.name}>
                   <Link 
                     href={link.href}
-                    className="text-gray-400 hover:text-neon-green transition-colors duration-300 hover:glow-text"
+                    className="text-gray-400 hover:text-green-400 transition-colors duration-300"
                   >
                     {link.name}
                   </Link>
@@ -139,7 +139,7 @@ const Footer = () => {
         </div>
 
         {/* Bottom Section */}
-        <div className="border-t border-electric-blue/30 mt-12 pt-8">
+        <div className="border-t border-gray-700 mt-12 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <div className="text-gray-400 text-sm mb-4 md:mb-0">
               © {currentYear} Samurai Tech Park. All rights reserved.
