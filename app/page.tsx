@@ -3,7 +3,7 @@
 import { motion } from 'framer-motion'
 import { useEffect, useState } from 'react'
 import Link from 'next/link'
-import { FaRocket, FaCode, FaUsers, FaProjectDiagram, FaArrowRight, FaPlay, FaHandshake, FaGraduationCap, FaEnvelope, FaBrain, FaCloud, FaMobile, FaDesktop, FaDatabase, FaShieldAlt, FaWhatsapp, FaCheckCircle } from 'react-icons/fa'
+import { FaRocket, FaCode, FaUsers, FaProjectDiagram, FaArrowRight, FaPlay, FaHandshake, FaGraduationCap, FaEnvelope, FaBrain, FaCloud, FaMobile, FaDesktop, FaDatabase, FaShieldAlt, FaCheckCircle } from 'react-icons/fa'
 import { openWhatsApp, trackLeadConversion, trackServiceInquiry } from './utils/whatsapp'
 
 const TypingText = ({ texts, speed = 50 }: { texts: string[], speed?: number }) => {
@@ -218,7 +218,7 @@ const HomePage = () => {
                 }}
                 className="btn-neon border-green-400 text-green-400 hover:bg-green-400 hover:text-white flex items-center justify-center px-8 py-4 text-lg"
               >
-                <FaWhatsapp className="mr-2" />
+                <span className="mr-2">📱</span>
                 WhatsApp Now
                 <FaArrowRight className="ml-2" />
               </button>
@@ -409,7 +409,7 @@ const HomePage = () => {
                 }}
                 className="btn-neon border-green-400 text-green-400 hover:bg-green-400 hover:text-white px-8 py-4 text-lg"
               >
-                <FaWhatsapp className="mr-2" />
+                <span className="mr-2">📱</span>
                 <span>WhatsApp</span>
               </button>
               <Link href="/about" className="btn-neon border-gray-400 text-gray-400 hover:bg-gray-400 hover:text-white px-8 py-4 text-lg">

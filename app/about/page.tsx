@@ -2,7 +2,7 @@
 
 import { motion } from 'framer-motion'
 import Link from 'next/link'
-import { FaRocket, FaCode, FaUsers, FaProjectDiagram, FaGraduationCap, FaEnvelope, FaPhone, FaMapMarkerAlt, FaAward, FaLightbulb, FaHandshake, FaGlobe, FaCog, FaBrain, FaDatabase, FaCloud, FaMobile, FaDesktop, FaServer, FaShieldAlt, FaChartLine, FaWhatsapp, FaArrowRight } from 'react-icons/fa'
+import { FaRocket, FaCode, FaUsers, FaProjectDiagram, FaGraduationCap, FaEnvelope, FaPhone, FaMapMarkerAlt, FaAward, FaLightbulb, FaHandshake, FaGlobe, FaCog, FaBrain, FaDatabase, FaCloud, FaMobile, FaDesktop, FaServer, FaShieldAlt, FaChartLine, FaArrowRight } from 'react-icons/fa'
 import { openWhatsApp, trackLeadConversion } from '../utils/whatsapp'
 
 const AboutPage = () => {
@@ -173,7 +173,7 @@ const AboutPage = () => {
                 }}
                 className="btn-neon border-green-400 text-green-400 hover:bg-green-400 hover:text-white flex items-center justify-center px-8 py-4 text-lg"
               >
-                <FaWhatsapp className="mr-2" />
+                <span className="mr-2">📱</span>
                 WhatsApp
               </button>
               <Link href="/automation-tools" className="btn-neon border-gray-400 text-gray-400 hover:bg-gray-400 hover:text-white flex items-center justify-center px-8 py-4 text-lg">
@@ -414,7 +414,7 @@ const AboutPage = () => {
                 }}
                 className="btn-neon border-green-400 text-green-400 hover:bg-green-400 hover:text-white px-8 py-4 text-lg"
               >
-                <FaWhatsapp className="mr-2" />
+                <span className="mr-2">📱</span>
                 <span>WhatsApp</span>
               </button>
               <Link href="/automation-tools" className="btn-neon border-gray-400 text-gray-400 hover:bg-gray-400 hover:text-white px-8 py-4 text-lg">

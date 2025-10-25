@@ -3,7 +3,7 @@
 import { motion } from 'framer-motion'
 import { useState } from 'react'
 import Link from 'next/link'
-import { FaEnvelope, FaPhone, FaMapMarkerAlt, FaClock, FaUser, FaComment, FaBriefcase, FaCog, FaArrowRight, FaCheckCircle, FaLightbulb, FaHandshake, FaAward, FaWhatsapp } from 'react-icons/fa'
+import { FaEnvelope, FaPhone, FaMapMarkerAlt, FaClock, FaUser, FaComment, FaBriefcase, FaCog, FaArrowRight, FaCheckCircle, FaLightbulb, FaHandshake, FaAward } from 'react-icons/fa'
 import { openWhatsApp, trackContactFormSubmission, trackLeadConversion } from '../utils/whatsapp'
 
 const ContactPage = () => {
@@ -189,7 +189,7 @@ const ContactPage = () => {
                 }}
                 className="btn-neon border-green-400 text-green-400 hover:bg-green-400 hover:text-white flex items-center justify-center px-8 py-4 text-lg"
               >
-                <FaWhatsapp className="mr-2" />
+                <span className="mr-2">📱</span>
                 WhatsApp Us
               </button>
               <Link href="/about" className="btn-neon border-gray-400 text-gray-400 hover:bg-gray-400 hover:text-white flex items-center justify-center px-8 py-4 text-lg">
@@ -426,7 +426,7 @@ const ContactPage = () => {
                     }}
                     className="w-full btn-neon border-green-400 text-green-400 hover:bg-green-400 hover:text-white py-3"
                   >
-                    <FaWhatsapp className="mr-2" />
+                    <span className="mr-2">📱</span>
                     WhatsApp Now
                   </button>
                   <a 
@@ -467,7 +467,7 @@ const ContactPage = () => {
                 }}
                 className="btn-neon border-green-400 text-green-400 hover:bg-green-400 hover:text-white px-8 py-4 text-lg"
               >
-                <FaWhatsapp className="mr-2" />
+                <span className="mr-2">📱</span>
                 <span>WhatsApp</span>
               </button>
               <Link href="/about" className="btn-neon border-gray-400 text-gray-400 hover:bg-gray-400 hover:text-white px-8 py-4 text-lg">

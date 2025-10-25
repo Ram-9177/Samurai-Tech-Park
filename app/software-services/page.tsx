@@ -2,7 +2,7 @@
 
 import { motion } from 'framer-motion'
 import Link from 'next/link'
-import { FaCode, FaRocket, FaMobile, FaDesktop, FaCloud, FaDatabase, FaShieldAlt, FaCog, FaUsers, FaChartLine, FaEnvelope, FaArrowRight, FaPlay, FaWhatsapp, FaCheckCircle, FaLightbulb, FaHandshake, FaAward, FaGlobe } from 'react-icons/fa'
+import { FaCode, FaRocket, FaMobile, FaDesktop, FaCloud, FaDatabase, FaShieldAlt, FaCog, FaUsers, FaChartLine, FaEnvelope, FaArrowRight, FaPlay, FaCheckCircle, FaLightbulb, FaHandshake, FaAward, FaGlobe } from 'react-icons/fa'
 import { openWhatsApp, trackLeadConversion, trackServiceInquiry } from '../utils/whatsapp'
 
 const SoftwareServicesPage = () => {
@@ -183,7 +183,7 @@ const SoftwareServicesPage = () => {
                 }}
                 className="btn-neon border-green-400 text-green-400 hover:bg-green-400 hover:text-white flex items-center justify-center px-8 py-4 text-lg"
               >
-                <FaWhatsapp className="mr-2" />
+                <span className="mr-2">📱</span>
                 WhatsApp
               </button>
             </motion.div>
@@ -350,7 +350,7 @@ const SoftwareServicesPage = () => {
                 }}
                 className="btn-neon border-green-400 text-green-400 hover:bg-green-400 hover:text-white px-8 py-4 text-lg"
               >
-                <FaWhatsapp className="mr-2" />
+                <span className="mr-2">📱</span>
                 <span>WhatsApp</span>
               </button>
               <Link href="/products" className="btn-neon border-gray-400 text-gray-400 hover:bg-gray-400 hover:text-white px-8 py-4 text-lg">

@@ -2,7 +2,7 @@
 
 import { motion } from 'framer-motion'
 import Link from 'next/link'
-import { FaRobot, FaCog, FaPlay, FaDownload, FaChartLine, FaUsers, FaClock, FaShieldAlt, FaEnvelope, FaArrowRight, FaWhatsapp, FaCheckCircle, FaLightbulb, FaHandshake, FaAward, FaGlobe, FaDatabase, FaCloud, FaMobile, FaDesktop } from 'react-icons/fa'
+import { FaRobot, FaCog, FaPlay, FaDownload, FaChartLine, FaUsers, FaClock, FaShieldAlt, FaEnvelope, FaArrowRight, FaCheckCircle, FaLightbulb, FaHandshake, FaAward, FaGlobe, FaDatabase, FaCloud, FaMobile, FaDesktop } from 'react-icons/fa'
 import { openWhatsApp, trackLeadConversion, trackServiceInquiry } from '../utils/whatsapp'
 
 const AutomationToolsPage = () => {
@@ -208,7 +208,7 @@ const AutomationToolsPage = () => {
                 }}
                 className="btn-neon border-green-400 text-green-400 hover:bg-green-400 hover:text-white flex items-center justify-center px-8 py-4 text-lg"
               >
-                <FaWhatsapp className="mr-2" />
+                <span className="mr-2">📱</span>
                 WhatsApp
               </button>
             </motion.div>
@@ -410,7 +410,7 @@ const AutomationToolsPage = () => {
                 }}
                 className="btn-neon border-green-400 text-green-400 hover:bg-green-400 hover:text-white px-8 py-4 text-lg"
               >
-                <FaWhatsapp className="mr-2" />
+                <span className="mr-2">📱</span>
                 <span>WhatsApp</span>
               </button>
               <Link href="/contact" className="btn-neon border-gray-400 text-gray-400 hover:bg-gray-400 hover:text-white px-8 py-4 text-lg">
