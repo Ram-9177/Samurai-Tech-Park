@@ -14,6 +14,9 @@ const nextConfig = {
   experimental: {
     optimizePackageImports: ['react-icons'],
   },
+  
+  // Disable server-side features for static export
+  distDir: 'out',
 };
 
 module.exports = nextConfig;

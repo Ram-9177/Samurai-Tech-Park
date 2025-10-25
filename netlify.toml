@@ -5,11 +5,49 @@
 [build.environment]
   NODE_VERSION = "18"
 
+# Handle client-side routing
 [[redirects]]
   from = "/*"
   to = "/index.html"
   status = 200
 
+# Handle specific page routes
+[[redirects]]
+  from = "/about"
+  to = "/about/"
+  status = 301
+
+[[redirects]]
+  from = "/contact"
+  to = "/contact/"
+  status = 301
+
+[[redirects]]
+  from = "/software-services"
+  to = "/software-services/"
+  status = 301
+
+[[redirects]]
+  from = "/automation-tools"
+  to = "/automation-tools/"
+  status = 301
+
+[[redirects]]
+  from = "/btech-projects"
+  to = "/btech-projects/"
+  status = 301
+
+[[redirects]]
+  from = "/products"
+  to = "/products/"
+  status = 301
+
+[[redirects]]
+  from = "/careers"
+  to = "/careers/"
+  status = 301
+
+# Security headers
 [[headers]]
   for = "/*"
   [headers.values]
@@ -18,8 +56,9 @@
     Referrer-Policy = "origin-when-cross-origin"
     Permissions-Policy = "camera=(), microphone=(), geolocation=()"
 
+# Cache static assets
 [[headers]]
-  for = "/static/*"
+  for = "/_next/static/*"
   [headers.values]
     Cache-Control = "public, max-age=31536000, immutable"
 
